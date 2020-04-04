@@ -1,7 +1,7 @@
 baseurl = "https://vittorius.github.io"
 title = "On software engineering and everything"
 
-theme = "hugo-coder"
+theme = "anubis"
 
 languagecode = "en"
 defaultcontentlanguage = "en"
@@ -52,12 +52,6 @@ disqusShortname = "vittorius"
   # Custom JS
   custom_js = []
 
-# If you want to use fathom(https://usefathom.com) for analytics, add this section
-#[params.fathomAnalytics]
-#    siteID = "ABCDE"
-#    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
-#    serverURL = "analytics.example.com"
-
 [taxonomies]
   category = "categories"
   series = "series"
@@ -96,32 +90,24 @@ disqusShortname = "vittorius"
 #    rel = "alternate"
 #    type = "application/rss+xml"
 
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
 
-[languages]
-  [languages.en]
-    languagename = "English"
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
 
-    [languages.en.menu]
-
-      [[languages.en.menu.main]]
-        name = "About"
-        weight = 4
-        url = "about/"
-
-      [[languages.en.menu.main]]
-        name = "Blog"
-        weight = 1
-        url = "posts/"
-
-#            [[languages.en.menu.main]]
-#            name = "Projects"
-#            weight = 2
-#            url = "projects/"
-
-      [[languages.en.menu.main]]
-        name = "Contact me"
-        weight = 3
-        url = "contact/"
+  [[menu.main]]
+    name = "Archive"
+    identifier = "archive"
+    url = "/posts/"
+    weight = 3
 
 [privacy]
   [privacy.disqus]
